@@ -31,14 +31,32 @@ p {
 }
 
 a {
-    color:#00CC00;
-    text-decoration:none;
+    color:#000000;
+    text-decoration:none; 
 }
 
 a:hover {
-    color:#000000;
+    color:#FF3333;
 }
 
+figure {
+    padding:25px;
+    background-color:#9370DB;
+    display:inline-block; 
+    border-radius:6px; 
+}
+
+figcaption {
+   text-align:center;
+   font-size:1.25em; 
+   color:#000000;
+}
+
+main {
+    width:1200px
+    overflow:hidden;
+    margin:20px auto; 
+}
 /*===============================HEADER STYLES===================================*/
 
 header {
@@ -47,10 +65,13 @@ header {
 } 
 
 #logo {
-    color:#AEAEAE;
+    color:#000000;
 }
 #logo:hover {
     color:#000000;
+    position:relative;
+    top:20px;
+    left:20px;
 }
 
 /*=========================BANNER STYLES=======================*/
@@ -64,9 +85,86 @@ header {
     background-size:cover;
 }
 
-#bannerext {
+#bannerText {
     color:#FFFFFF;
     font-size:6em;
     text-align:center;
-    text-shadow:6px 6px #000000;
+    text-shadow:6px 6px 6px #000000;
+} 
+
+/*==========================NAVIGATION STYLES===================*/ 
+
+#menu {
+    position:absolute;
+    top:23px;
+    right:20px;
+}
+
+#menu ul li {
+    display:inline-block;
+    margin:0px 13px; 
+    background-color:#99CCFF;
+    border-radius:6px 6px 0px 0px;
+    padding:15px 25px;
+}
+
+.currentPage {
+    color:#FF7900;
+} 
+
+/*===================THREE COLUMS STYLES===============================*/ 
+
+.colum1, .colum2, .colum3 {
+    width:384px;
+}
+
+.colum1, .colum2, .colum3 {
+    float:left;
+    margin-right:24px;
+}
+
+/*.colum3 {*/
+/*    float:left;*/
+    
+    
+
+.colum1 h2, .colum2 h2, .colum3 h2 {
+    font-size:5.5em;
+    font-weight:700;
+    text-align:center;
+    margin:15px 0px;
+} 
+
+.colum1 p, .colum2 p, .colum3 p {
+    padding:0px;
+    text-align:justify;
+}
+
+.colum1 span, .colum2 span, .colum3 span {
+    background-color:#9370DB;
+    color:#000000;
+    display:block;
+    font-size:2em;
+    font-weight:600;
+    text-align:center;
+    padding:15px 0px;
+} 
+
+/*=================BUTTON STYLES===============*/
+
+.button {
+    background-color:#00FFCC;
+    padding:5px 8px;
+    border-radius:8px;
+}
+
+.button-2 {
+    background-color:#00FFCC;
+    padding:5px 8px;
+    border-radius:8px;
+} 
+
+.button-3 {
+    color:#000000;
+    text-align:center;
 }
